@@ -150,7 +150,7 @@
                 }
             }
             if (iPhoneXSeries) {
-                titleWidth = 10;
+                titleWidth = 12;
             } else {
                 titleWidth = imageStartingY;
             }
