@@ -142,15 +142,15 @@
         CGContextSetFillColorWithColor(context, [titleAttributes[NSForegroundColorAttributeName] CGColor]);
         
         BOOL iPhoneXSeries = NO;
-            CGFloat titleWidth;
-            if (@available(iOS 11.0, *)) {
+        CGFloat titleWidth;
+        if (@available(iOS 11.0, *)) {
                 UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
                 if (mainWindow.safeAreaInsets.bottom > 0.0) {
                     iPhoneXSeries = YES;
                 }
             }
             if (iPhoneXSeries) {
-                titleWidth = 12;
+                titleWidth = 15;
             } else {
                 titleWidth = imageStartingY;
             }
